@@ -227,3 +227,23 @@ a:visited {
   background-color: #2f52e0;
   box-shadow: 0 0 0 0.7rem rgb(193, 203, 246, 0.8);
 }
+
+/* Media queries */
+@media (max-width: 60em) {
+  body {
+    display: grid;
+    grid-template-rows: repeat(2, 100vh);
+  }
+}
+
+@media (max-width: 33em) {
+  body {
+    grid-template-rows: repeat(2, 60rem);
+  }
+
+  .form {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
