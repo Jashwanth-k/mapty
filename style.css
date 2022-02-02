@@ -252,3 +252,9 @@ a:visited {
     flex-direction: column;
   }
 }
+
+@media (max-width: 28em) {
+  .sidebar {
+    padding: 3rem 2rem 4rem 2rem;
+  }
+}
