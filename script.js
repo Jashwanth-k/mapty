@@ -60,6 +60,7 @@ class Cycling extends Workout {
 
 ///////////////////////////////
 // APPLICATION ARCITECTURE
+const body = document.querySelector('body');
 const form = document.querySelector('.form');
 const containerWorkouts = document.querySelector('.workouts');
 const inputType = document.querySelector('.form__input--type');
@@ -136,7 +137,11 @@ class App {
 
     form.style.display = 'none';
     form.classList.add('hidden');
-    setTimeout(() => (form.style.display = 'grid'), 1000);
+    if (body.offsetWidth <= 528) {
+      setTimeout(() => (form.style.display = 'flex'), 1000);
+    } else {
+      setTimeout(() => (form.style.display = 'grid'), 1000);
+    }
   }
 
   _toggleElevationField() {
@@ -284,6 +289,13 @@ class App {
         duration: 1,
       },
     });
+
+    if (body.offsetWidth <= 528) {
+      window.scroll({
+        top: 10000,
+        behavior: 'smooth',
+      });
+    }
 
     // using the public interface
     // workout.click();

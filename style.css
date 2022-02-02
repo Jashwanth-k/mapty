@@ -246,4 +246,9 @@ a:visited {
     display: flex;
     flex-direction: column;
   }
+
+  .workout {
+    display: flex;
+    flex-direction: column;
+  }
 }
