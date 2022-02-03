@@ -238,7 +238,7 @@ a:visited {
 
 @media (max-width: 33em) {
   body {
-    grid-template-rows: repeat(2, 70rem);
+    grid-template-rows: repeat(2, 82vh);
   }
 
   .form {
